@@ -3,9 +3,9 @@ import java.util.*;
 public class Solution2 {
 	static HashMap<Integer,Integer>hm=new HashMap<Integer,Integer>();
 	public static void sortByValue()
-    {
-		List<Map.Entry<Integer, Integer> > list =new LinkedList<Map.Entry<Integer, Integer> >(hm.entrySet());
-        Collections.sort(list, new Comparator<Map.Entry<Integer, Integer> >() {
+	{
+	    List<Map.Entry<Integer, Integer> > list =new LinkedList<Map.Entry<Integer, Integer> >(hm.entrySet());
+            Collections.sort(list, new Comparator<Map.Entry<Integer, Integer> >() {
             public int compare(Map.Entry<Integer, Integer> o1,Map.Entry<Integer, Integer> o2)
             {
                 return (o1.getValue()).compareTo(o2.getValue());
@@ -15,7 +15,7 @@ public class Solution2 {
         for (Map.Entry<Integer, Integer> aa : list) {
         	System.out.println(aa.getKey()+" occurs "+aa.getValue()+" times");
         }
-    }
+     }
 	public static void findOccurence(ArrayList<Integer> a)
 	{
 		for(int i=0;i<a.size();i++)
